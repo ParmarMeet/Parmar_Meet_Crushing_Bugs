@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Drag and Drop Puzzle Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Change the heading style -->
+    <h1 style="font-family: 'Luckiest Guy', cursive;">Drag and Drop Puzzle Game</h1>
+    
+    <button id="resetBut">Reset</button>
+
+    <header id="headLine">
+        <h2>Solve the Puzzle</h2> <!-- Change the paragraph to a heading -->
+    </header>
+
+    <section id="game-boards">
+        <!-- These are the draggable pieces -->
+        <div class="puzzle-pieces">
+            <img id="topLeft" src="img/topLeft0.jpg" class="puzzle-image" alt="top left">
+            <img id="topRight" src="img/topRight0.jpg" class="puzzle-image" alt="top right">
+            <img id="bottomLeft" src="img/bottomLeft0.jpg" class="puzzle-image" alt="bottom left">
+            <img id="bottomRight" src="img/bottomRight0.jpg" class="puzzle-image" alt="bottom right">
+        </div>    
+        <!-- These are the drop zones -->
+        <div class="puzzle-board">
+            <div class="drop-zone tl"></div>
+            <div class="drop-zone tr"></div>
+            <div class="drop-zone bl"></div>
+            <div class="drop-zone br"></div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Click the thumbnail to change the pieces</p> <!-- Corrected typo -->
+        <nav id="buttonHolder">
+            <img data-bgref="0" src="img/buttonZero.jpg" alt="puzzle background forest">
+            <img data-bgref="1" src="img/buttonOne.jpg" alt="puzzle background winter">
+            <img data-bgref="2" src="img/buttonTwo.jpg" alt="puzzle background space">
+            <img data-bgref="3" src="img/buttonThree.jpg" alt="puzzle background robots">
+        </nav>
+        
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
